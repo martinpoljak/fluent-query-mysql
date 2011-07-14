@@ -1,7 +1,7 @@
 Fluent Query MySQL Driver
 =========================
 
-**Fluent Query** is cool way how to write SQL queries. Or general way 
+**Fluent Query** is cool way how to write SQL queries and general way 
 how to convert series of method calls to string query in an universal 
 and system independent manner.
 

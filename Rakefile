@@ -18,7 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.name = "fluent-query-mysql"
   gem.homepage = "http://github.com/martinkozak/fluent-query-mysql"
   gem.license = "MIT"
-  gem.summary = 'MySQL support for the Fluent Query.'
+  gem.summary = 'MySQL support for the Fluent Query. Fluent Query is cool way how to write SQL queries in Ruby.'
   gem.email = "martinkozak@martinkozak.net"
   gem.authors = ["Martin Kozák"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
