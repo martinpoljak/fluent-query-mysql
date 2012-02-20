@@ -4,13 +4,13 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{fluent-query-mysql}
-  s.version = "0.9.0"
+  s.name = "fluent-query-mysql"
+  s.version = "0.9.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = [%q{Martin Kozák}]
-  s.date = %q{2011-07-14}
-  s.email = %q{martinkozak@martinkozak.net}
+  s.authors = ["Martin Koz\u{e1}k"]
+  s.date = "2012-02-20"
+  s.email = "martinkozak@martinkozak.net"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md"
@@ -27,11 +27,11 @@ Gem::Specification.new do |s|
     "lib/fluent-query/drivers/mysql.rb",
     "lib/fluent-query/mysql.rb"
   ]
-  s.homepage = %q{http://github.com/martinkozak/fluent-query-mysql}
-  s.licenses = [%q{MIT}]
-  s.require_paths = [%q{lib}]
-  s.rubygems_version = %q{1.8.5}
-  s.summary = %q{MySQL support for the Fluent Query. Fluent Query is cool way how to write SQL queries in Ruby.}
+  s.homepage = "http://github.com/martinkozak/fluent-query-mysql"
+  s.licenses = ["MIT"]
+  s.require_paths = ["lib"]
+  s.rubygems_version = "1.8.17"
+  s.summary = "MySQL support for the Fluent Query. Fluent Query is cool way how to write SQL queries in Ruby."
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
@@ -41,23 +41,23 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<fluent-query-sql>, [">= 0.9.0"])
       s.add_runtime_dependency(%q<fluent-query>, [">= 0.9.0"])
       s.add_runtime_dependency(%q<dbd-mysql>, [">= 0"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.0.13"])
-      s.add_development_dependency(%q<jeweler>, ["~> 1.6.0"])
+      s.add_development_dependency(%q<bundler>, [">= 1.0.13"])
+      s.add_development_dependency(%q<jeweler2>, [">= 2.0.0"])
     else
       s.add_dependency(%q<fluent-query-dbi>, [">= 0.9.0"])
       s.add_dependency(%q<fluent-query-sql>, [">= 0.9.0"])
       s.add_dependency(%q<fluent-query>, [">= 0.9.0"])
       s.add_dependency(%q<dbd-mysql>, [">= 0"])
-      s.add_dependency(%q<bundler>, ["~> 1.0.13"])
-      s.add_dependency(%q<jeweler>, ["~> 1.6.0"])
+      s.add_dependency(%q<bundler>, [">= 1.0.13"])
+      s.add_dependency(%q<jeweler2>, [">= 2.0.0"])
     end
   else
     s.add_dependency(%q<fluent-query-dbi>, [">= 0.9.0"])
     s.add_dependency(%q<fluent-query-sql>, [">= 0.9.0"])
     s.add_dependency(%q<fluent-query>, [">= 0.9.0"])
     s.add_dependency(%q<dbd-mysql>, [">= 0"])
-    s.add_dependency(%q<bundler>, ["~> 1.0.13"])
-    s.add_dependency(%q<jeweler>, ["~> 1.6.0"])
+    s.add_dependency(%q<bundler>, [">= 1.0.13"])
+    s.add_dependency(%q<jeweler2>, [">= 2.0.0"])
   end
 end
 
