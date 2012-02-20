@@ -76,10 +76,19 @@ module FluentQuery
                 end
 
                 # Sets encoding and default schema
-                @_nconnection.do("SET NAMES " << self.quote_string(encoding) << ";")
+                @_nconnection.do("SET NAMES " + self.quote_string(encoding) + ";")
 
                 return @_nconnection
                 
+            end
+
+            ##
+            # Quotes field by field quoting.
+            #
+
+            public
+            def quote_identifier(field)
+                '`' + field.to_s.gsub!(".", '`.`') + '`'
             end
         end
     end
